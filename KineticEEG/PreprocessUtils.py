@@ -47,6 +47,7 @@ def highpass(signal):
 def bin_power(X,Band,Fs):
     	C = fft(X)
 	C = abs(C)
+	# Check this code
 	Power =zeros(len(Band)-1);
 	for Freq_Index in xrange(0,len(Band)-1):
 		Freq = float(Band[Freq_Index])									    
